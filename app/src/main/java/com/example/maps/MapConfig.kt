@@ -1,10 +1,11 @@
 package com.example.maps
 
-import org.maplibre.android.geometry.LatLng
+import org.maplibre.spatialk.geojson.Position
+
 
 object MapConfig {
     const val INITIAL_ZOOM = 12.0
-    val HANOI_CENTER = LatLng(21.0285, 105.8542)
+    val HANOI_CENTER = Position(latitude = 21.0285, longitude = 105.8542)
     val STYLE_URL =
         "https://maps.geoapify.com/v1/styles/osm-bright/style.json?apiKey=${BuildConfig.GEOAPIFY_API_KEY}"
 }
